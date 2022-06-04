@@ -13,3 +13,8 @@ def test_sort_by_criteria():
     sort_by(jobs, 'max_salary')
     assert jobs[1]['max_salary'] == '315439'
     assert jobs[-2]['max_salary'] == ''
+
+    sort_by(jobs, 'date_posted')
+    assert jobs[1]['date_posted'] == '2020-05-08'
+    assert jobs[-2]['date_posted'] == '2020-04-06'
+    
