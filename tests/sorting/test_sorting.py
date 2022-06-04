@@ -7,3 +7,4 @@ def test_sort_by_criteria():
     jobs = read(path)
     sort_by(jobs, 'min_salary')
     assert jobs[1]['min_salary'] == '19857'
+    assert jobs[-2]['min_salary'] == ''
