@@ -32,7 +32,7 @@ def get_unique_industries(path):
     jobList = read(path)
     industryList = list()
     for job in jobList:
-        if job["industry"] not in industryList:
+        if job["industry"] not in industryList and job["industry"]:
             industryList.append(job["industry"])
     return industryList
 
