@@ -66,7 +66,7 @@ def matches_salary_range(job, salary):
         or not isinstance(salary, int)
         or job["min_salary"] > job["max_salary"]
     ):
-        return ValueError
+        raise ValueError
     return job["min_salary"] <= salary <= job["max_salary"]
 
 
